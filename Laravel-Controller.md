@@ -12,6 +12,7 @@ Laravel Controller merupakan salah satu bagian dimana seluruh fungsional web dib
 
 # Konsep
 Salah satu contoh aktivitas pada controller adalah aktivitas CRUD (Create, Read, Update, Delete).
+![alt txt](https://github.com/storyofhis/rmc-pbkk/blob/main/dokumentasi/mvc_laravel.png)
 
 # Langkah-Langkah
 ## Langkah Pertama Membuat file Controller
