@@ -42,12 +42,12 @@ Cara kedua, kita dapat membuat file controller baru seperti pada cara pertama de
 ``` php
 php artisan make:controller MahasiswaController
 ```
-Perintah make:controller di atas adalah perintah dari php artisan untuk membuat controller baru sesuai nama yang diinginkan. Pada kasus ini file controller tersebut bernama MahasiswaController. Maka file controller MahasiswaController.php akan dibuat secara otomatis. Selain itu, dengan memanfaatkan php artisan make:controller ini kita dapat langsung menulis kode sesuai template Resource Controller pada dalam controller dengan menambahkan --resource setelah nama file controller :
+Perintah `make:controller` di atas adalah perintah dari php artisan untuk membuat controller baru sesuai nama yang diinginkan. Pada kasus ini file controller tersebut bernama MahasiswaController. Maka file controller `MahasiswaController.php` akan dibuat secara otomatis. Selain itu, dengan memanfaatkan `php artisan make:controller` ini kita dapat langsung menulis kode sesuai template Resource Controller pada dalam controller dengan menambahkan `--resource` setelah nama file controller :
 ``` php
 php artisan make:controller MahasiswaController --resource
 ```
 
-Berikut adalah DosenController jika dibuat dengan resource :
+Berikut adalah MahasiswaController jika dibuat dengan resource :
 ``` php
 <?php
 
