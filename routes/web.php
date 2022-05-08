@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 Route::get('/input', [FormController::class, 'input']);
 Route::post('/proses', [FormController::class, 'proses']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -45,3 +47,11 @@ Route::middleware('date')->prefix("/pegawai")->group(function () {
         return "Pegawai dengan id: " . $id . ".";
     })->whereNumber('id');
 });
+
+//---CONTROLLER
+//Cara akses pertama
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+
+//Cara akses kedua
+//Route::get('/mahasiswa', 'MahasiswaController@index');
+//Route::resource('/mahasiswa', 'MahasiswaController');
