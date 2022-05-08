@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 </head>
 <body>
- 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
