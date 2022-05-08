@@ -21,6 +21,33 @@ Route::get('/', function () {
 Route::get('/input', [FormController::class, 'input']);
 Route::post('/proses', [FormController::class, 'proses']);
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// middleware
+Route::get("/view", function () {
+    return "Warga Laravel.";
+})->name("view");
+
+Route::prefix("/pegawai")->group(function () {
+    Route::get("/view", function () {
+        return "Pegawai Laravel.";
+    });
+    Route::get("/{id}", function ($id) {
+        return "Pegawai dengan id: " . $id . ".";
+    })->whereNumber('id');
+});
+
+Route::middleware('date')->prefix("/pegawai")->group(function () {
+    Route::get("/view", function () {
+        return "Pegawai Laravel.";
+    });
+    Route::get("/{id}", function ($id) {
+        return "Pegawai dengan id: " . $id . ".";
+    })->whereNumber('id');
+});
+
 //---CONTROLLER
 //Cara akses pertama
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
