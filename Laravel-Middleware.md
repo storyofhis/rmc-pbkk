@@ -20,7 +20,8 @@
 
 Dalam mengakses route, terkadang kita perlu mengecek kembali kriteria akses. Misal, sebuah web memiliki route untuk anggota dan route untuk umum. Tentu, tidak mungkin orang umum diperbolehkan mengakses route yang dimiliki anggota karena bisa jadi orang luar akan mengambil data-data pribadi maupun masalah keamanan lainnya. Karena itu, diperlukan semacam pengecekan sebelum diberikan akses request terhadap route yang disebut middleware.
 
-![Middleware](./img/middleware.png)
+![middleware](https://user-images.githubusercontent.com/72302421/167324189-c75bd831-cbef-418b-aec4-398e94ab8ff2.png)
+
 
 Dalam kesempatan kali ini, kita mencoba menggunakan route sebagai semacam link coming soon. Kita tidak dapat mengakses sebuah route jika tanggalnya kurang dari 27 Mei 2021. Nantinya, pengguna akan diarahkan ke laman named route “view” jika tidak sesuai.
 
@@ -67,7 +68,7 @@ php artisan make:middleware EnsureDateIsRight
 
 Nantinya pada directory `App\Http\Middleware`, kita dapat melihat file `EnsureDateIsRight.php`
 
-![Lokasi Directory Middleware](./img/middleware-1.png)
+![middleware-1](https://user-images.githubusercontent.com/72302421/167324256-986383cb-f970-4ab6-abd2-4aa0158c1d0b.png)
 
 ### Langkah Ketiga
 
@@ -87,7 +88,7 @@ public function handle(Request $request, Closure $next)
 
 Di sini, dapat dilihat, jika tanggal kurang dari 27-05-2021, maka middleware akan mengarahkan route kita kepada named route “view”.
 
-![Middleware EnsureDateIsRight](./img/middleware-2.png)
+![middleware-2](https://user-images.githubusercontent.com/72302421/167324336-32981691-6bc9-4f21-91fe-80e021976229.png)
 
 ### Langkah Keempat
 
@@ -118,7 +119,7 @@ Hal tersebut berarti kita akan mengarahkan keseluruhan prefix “/pegawai” unt
 
 Sekarang, jika kita mencoba menjalankan Laravel, maka jika kita mencoba mengakses “/pegawai/{id}”.
 
-![Akses Middleware Berhasil](./img/middleware-3.png)
+![middleware-3](https://user-images.githubusercontent.com/72302421/167324370-ed3d487b-2d39-4858-811f-147a062c68f6.png)
 
 Sekarang kita coba ubah kodingan $date_target pada file `App\Http\Middleware\EnsureDateIsRight.php` menjadi berikut.
 
@@ -128,7 +129,7 @@ $date_target = new DateTime("28-05-2021");
 
 Maka, jika kita mengakses “/pegawai/{id}”, kita akan diarahkan ke named route “view” karena tanggal ternyata belum 28-05-2021.
 
-![Akses Middleware Gagal](./img/middleware-4.png)
+![middleware-4](https://user-images.githubusercontent.com/72302421/167324402-6b37269f-2065-4b48-bc89-56748c1c8a07.png)
 
 ## Kesimpulan
 
