@@ -1,6 +1,6 @@
 # Laravel Middleware
 
-[Kembali](readme.md)
+[Kembali](README.md)
 
 ## Daftar Isi
 
