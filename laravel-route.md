@@ -32,12 +32,12 @@ Banyaknya fitur tersebut lah yang akan kita pelajari pada konsep Laravel Route.
 ## Skenario Basic Routing
 Berikut adalah langkah membuat sebuah website portfolio sederhana yang terdiri dari halaman utama dan 3 halaman utama lain:
 
-home
-about
-education
-projects
+- home
+- about
+- education
+- projects
 
-Routes Default
+## Routes Default
 
 Berikut adalah contoh Routes yang dibuat:
 
