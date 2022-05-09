@@ -9,6 +9,6 @@
 
 
 # PEJUANG PBKK B 🥸 :
-## - Tio Dwi Ardhana           😎: 5025201099
-## - Maula Izza Azizi          🥰 : 5025201104
-## - Aristya Vika Wijaya       👧 : 05111940000233
+## - [Tio Dwi Ardhana]           😎: 5025201099
+## - [Maula Izza Azizi]          🥰 : 5025201104
+## - [Aristya Vika Wijaya]       👧 : 05111940000233
