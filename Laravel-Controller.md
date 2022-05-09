@@ -1,4 +1,5 @@
 # Laravel Tutorial Controller
+[Kembali](README.md)
 # Daftar Isi
 1. [Pengertian](https://github.com/storyofhis/rmc-pbkk/blob/main/Laravel-Controller.md#pengertian)
 2. [Konsep](https://github.com/storyofhis/rmc-pbkk/blob/main/Laravel-Controller.md#Konsep)
