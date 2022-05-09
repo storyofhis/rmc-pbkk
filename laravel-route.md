@@ -1,6 +1,6 @@
 # Laravel Route Dasar
 
-[Kembali](readme.md)
+[Kembali](README.md)
 
 ## Daftar Isi
 
