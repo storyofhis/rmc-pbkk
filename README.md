@@ -10,5 +10,5 @@
 
 # PEJUANG PBKK B 🥸 :
 ## - [Tio Dwi Ardhana](https://github.com/tiodwiardhana)           😎: 5025201099
-## - [Maula Izza Azizi]          🥰 : 5025201104
-## - [Aristya Vika Wijaya]       👧 : 05111940000233
+## - [Maula Izza Azizi](https://github.com/storyofhis)          🥰 : 5025201104
+## - [Aristya Vika Wijaya](https://github.com/Aristya14)       👧 : 05111940000233
