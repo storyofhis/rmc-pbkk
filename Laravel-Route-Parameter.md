@@ -52,7 +52,7 @@ Maka, tampilannya akan menjadi sebagai berikut.
 
 Kini, permasalahan terjadi jika kita mengisi `$id` dengan string lain (bukan angka). Maka, id yang seharusnya hanya angka maka dapat menampilkan string.
 
-![Pegawai Id Keluar String](./img/route-param-2.png)
+![Pegawai Id Keluar String](./dokumentasi/route-param-2.png)
 
 Tentu hal tersebut menimbulkan permasalahan terbaru, jika id hanya terbatas pada angka. Untuk mengatasi hal tersebut, kita cukup menambahkan method `where` di mana mengambil string dari nama parameter dan [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) dari parameter. Jadinya sebagai berikut.
 
@@ -63,7 +63,7 @@ Route::get("/pegawai/{id}", function ($id) {
 ```
 
 Apabila kita mencoba mengakses kembali route tadi, kita akan dikembalikan pada laman 404.
-![Pegawai Id Dengan Regex Return 404](./img/route-param-3.png)
+![Pegawai Id Dengan Regex Return 404](./dokumentasi/route-param-3.png)
 
 Jika kita kesulitan dalam memahami regex, kita juga bisa menambahkan method khusus seperti `whereNumber` (hanya angka), `whereAlpha` (hanya alphabet), `whereAlphaNumeric` (hanya angka dan alphabet), atau `whereUuid` (hanya unsigned). Kodenya akan seperti berikut.
 
@@ -94,7 +94,7 @@ Route::get("/pegawai/{id}/city/{city}", function ($id, $city) {
 ```
 
 Tampilannya akan menjadi seperti berikut.
-![Pegawai Id Chaining Route](./img/route-param-4.png)
+![Pegawai Id Chaining Route](./dokumentasi/route-param-4.png)
 
 ### Langkah Ketiga
 
@@ -117,7 +117,7 @@ Route::prefix("/pegawai")->group(function () {
 ```
 
 Selanjutnya, kita tinggal mengakses URI tersebut.
-![Pegawai Id Group](./img/route-param-5.png)
+![Pegawai Id Group](./dokumentasi/route-param-5.png)
 
 ## Kesimpulan
 
