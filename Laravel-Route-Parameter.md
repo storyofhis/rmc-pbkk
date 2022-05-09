@@ -45,7 +45,8 @@ Route::get("/pegawai/{id}", function ($id) {
 
 Maka, tampilannya akan menjadi sebagai berikut.
 
-![Pegawai Id](./img/route-param-1.png)
+
+![route-param-1](https://user-images.githubusercontent.com/73664125/167379851-c3a7dc69-547f-4efd-a2a2-b5f1e97696b2.png)
 
 ### Langkah Kedua
 
